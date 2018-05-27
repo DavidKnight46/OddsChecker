@@ -22,7 +22,8 @@ public class OddscheckerController {
 	 */
 	public void assemble(String filePath) throws IOException {
 
-		try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
+		try (BufferedReader reader = new BufferedReader(new FileReader(filePath)
+				)) {
 			String line;
 
 			while ((line = reader.readLine()) != null) {
@@ -103,7 +104,7 @@ public class OddscheckerController {
     }
 
 	/**
-	 * Sort the list in order from smallest to longest
+	 * Sort the list in order from longest to smallest
 	 * 
 	 * @param fragmentList
 	 */
